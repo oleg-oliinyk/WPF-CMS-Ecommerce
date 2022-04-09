@@ -1,0 +1,91 @@
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\StaemDatabaseApp.exe.config
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\StaemDatabaseApp.exe
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\StaemDatabaseApp.pdb
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\Google.Protobuf.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\MySql.Data.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Buffers.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Memory.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\ZstdNet.dll
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\Google.Protobuf.pdb
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\Google.Protobuf.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\MySql.Data.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Buffers.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Memory.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddCustomerWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddReservationWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddOrderWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\EditGameWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddGameWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\LoginWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\MainWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\App.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp_MarkupCompile.cache
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp_MarkupCompile.lref
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\App.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddCustomerWindow.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddReservationWindow.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddOrderWindow.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\EditGameWindow.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddGameWindow.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\LoginWindow.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\MainWindow.baml
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.g.resources
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.exe
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.pdb
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\EditUserWindow.g.cs
+C:\Users\Lenovo\Desktop\staem\StaemDatabaseApp\obj\Debug\ViewLayer\AddUserWindow.g.cs
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\StaemDatabaseApp.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\ViewLayer\EditUserWindow.g.cs
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\ViewLayer\AddUserWindow.g.cs
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\ViewLayer\LoginWindow.g.cs
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\ViewLayer\MainWindow.g.cs
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\App.g.cs
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\StaemDatabaseApp_MarkupCompile.cache
+C:\Users\Lenovo\Desktop\Szk1 Project\obj\Debug\StaemDatabaseApp_MarkupCompile.lref
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\App.g.cs
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp_MarkupCompile.cache
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp_MarkupCompile.lref
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\StaemDatabaseApp.exe.config
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\StaemDatabaseApp.exe
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\StaemDatabaseApp.pdb
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\MySql.Data.dll
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\System.Buffers.dll
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\System.Memory.dll
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\ZstdNet.dll
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\bin\Debug\MySql.Data.xml
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\App.baml
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.g.resources
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.exe
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\StaemDatabaseApp.pdb
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\EditUserWindow.g.cs
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\AddUserWindow.g.cs
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\LoginWindow.g.cs
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\EditUserWindow.baml
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\AddUserWindow.baml
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\LoginWindow.baml
+C:\Users\Lenovo\Desktop\StaemDatabaseApp\obj\Debug\Views\MainWindow.baml

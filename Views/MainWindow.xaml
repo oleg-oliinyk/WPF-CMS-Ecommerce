@@ -1,0 +1,173 @@
+﻿<Window x:Class="StaemDatabaseApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StaemDatabaseApp"
+        mc:Ignorable="d"
+        Title="Manage Shop"
+        Height="450"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="375*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="tabControl" Grid.ColumnSpan="3" SelectionChanged="tabControl_SelectionChanged">
+            <TabItem Header="Users" Margin="-2,-2,-2,0" HorizontalAlignment="Right" Width="72">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="145*" />
+                        <ColumnDefinition Width="649*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="10">
+                        <Button x:Name="showGamesButton1"
+                            Content="Show users"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            Click="showUsersButton_Click" />
+                        <Button x:Name="addGameButton1"
+                            Content="Add user"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="addUserButton_Click" />
+                        <Button x:Name="removeGameButton1"
+                            Content="Remove user"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="removeUserButton_Click" />
+                        <Button x:Name="modifyGameButton1"
+                            Content="Edit user"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="EditUserButton_Click" />
+                    </StackPanel>
+                    <DataGrid x:Name="usersDataGrid"
+                        Grid.Column="2"
+                        Margin="5" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Products" Margin="0,-2,-2,0" HorizontalAlignment="Right" Width="72">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="107*" />
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="644*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="10" Grid.ColumnSpan="2">
+                        <Button x:Name="showProductsButton"
+                            Content="Show products"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            Click="showProductsButton_Click" />
+                        <Button x:Name="addProductButton"
+                            Content="Add product"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="addProductButton_Click" />
+                        <Button x:Name="removeProductsButton"
+                            Content="Remove product"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="removeProductButton_Click" />
+                        <Button x:Name="EditProductButton"
+                            Content="Edit product"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="EditProductButton_Click" />
+                    </StackPanel>
+                    <DataGrid x:Name="productsDataGrid"
+                        Grid.Column="2"
+                        Margin="5" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Categories" Margin="-2,-2,-2,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="145*" />
+                        <ColumnDefinition Width="649*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="10">
+                        <Button x:Name="showCategoriesButton"
+                            Content="Show categories"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            Click="showCategoriesButton_Click" />
+                        <Button x:Name="addCategoryButton"
+                            Content="Add category"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="addCategoryButton_Click" />
+                        <Button x:Name="removeCategoryButton"
+                            Content="Remove category"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="removeCategoryButton_Click" />
+                        <Button x:Name="EditCategoryButton"
+                            Content="Edit category"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="EditCategoryButton_Click" />
+                    </StackPanel>
+                    <DataGrid x:Name="categoriesDataGrid"
+                        Grid.Column="2"
+                        Margin="5" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Colors" Margin="-2,-2,-2,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="145*" />
+                        <ColumnDefinition Width="649*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="10">
+                        <Button x:Name="showColorsButton"
+                            Content="Show colors"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            Click="showColorsButton_Click" />
+                        <Button x:Name="addColorButton"
+                            Content="Add color"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="addColorButton_Click" />
+                        <Button x:Name="removeColorButton"
+                            Content="Remove color"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="removeColorButton_Click" />
+                        <Button x:Name="EditColorButton"
+                            Content="Edit color"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="EditColorButton_Click" />
+                    </StackPanel>
+                    <DataGrid x:Name="colorsDataGrid"
+                        Grid.Column="2"
+                        Margin="5" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Sizes" Margin="-2,-2,-2,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="145*" />
+                        <ColumnDefinition Width="649*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="10">
+                        <Button x:Name="showSizesButton"
+                            Content="Show sizes"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            Click="showSizesButton_Click" />
+                        <Button x:Name="addSizeButton"
+                            Content="Add size"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="addSizeButton_Click" />
+                        <Button x:Name="removeSizeButton"
+                            Content="Remove size"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="removeSizeButton_Click" />
+                        <Button x:Name="EditSizeButton"
+                            Content="Edit size"
+                            Margin="5"
+                            VerticalAlignment="Center" Click="EditSizeButton_Click" />
+                    </StackPanel>
+                    <DataGrid x:Name="sizesDataGrid"
+                        Grid.Column="2"
+                        Margin="5" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
