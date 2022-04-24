@@ -17,7 +17,7 @@
                 <ColumnDefinition Width="50*"/>
                 <ColumnDefinition Width="107*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Label Content="Title:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,10,0,0" VerticalAlignment="Top" Width="80"/>
             <TextBox x:Name="titleTextBox" Grid.Column="1" Height="27" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="194"/>
 
@@ -33,14 +33,32 @@
             <Label Content="Amount:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,138,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
             <TextBox x:Name="amountTextBox" Grid.Column="1" Height="27" Margin="10,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="194"/>
 
-            <Label Content="Category:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,174,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
-            <ComboBox x:Name="categoryComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,174,0,0" VerticalAlignment="Top" Width="194"/>
+            <Label Content="Category:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,166,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
+            <ComboBox
+                SelectedValue="{Binding FilterService.TripLengthFrom, Mode=TwoWay}"
+                ItemsSource="{Binding TripLengthList, Mode=OneTime}"
+                SelectedValuePath="id"
+                DisplayMemberPath="Title"
+                x:Name="categoryComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,170,0,0" VerticalAlignment="Top" Width="194"/>
 
-            <Label Content="Color:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,202,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
-            <ComboBox x:Name="colorComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,206,0,0" VerticalAlignment="Top" Width="194"/>
+            <Label Content="Color:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,193,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
+            <ComboBox
+                SelectedValue="{Binding FilterService.TripLengthFrom, Mode=TwoWay}"
+                ItemsSource="{Binding TripLengthList, Mode=OneTime}"
+                SelectedValuePath="id"
+                DisplayMemberPath="Title"
+                x:Name="colorComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,197,0,0" VerticalAlignment="Top" Width="194"/>
 
-            <Label Content="Active:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,234,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
-            <TextBox x:Name="activeTextBox" Grid.Column="1" Height="27" Margin="10,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="194"/>
+            <Label Content="Size:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,221,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
+            <ComboBox
+                SelectedValue="{Binding FilterService.TripLengthFrom, Mode=TwoWay}"
+                ItemsSource="{Binding TripLengthList, Mode=OneTime}"
+                SelectedValuePath="id"
+                DisplayMemberPath="Name"
+                x:Name="sizeComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,225,0,0" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.479,2.435"/>
+
+            <Label Content="Active:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="27" Margin="10,252,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.529,2.4"/>
+            <TextBox x:Name="activeTextBox" Grid.Column="1" Height="27" Margin="10,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="194"/>
 
         </Grid>
         <Button x:Name="addButton" Content="Add" Height="31" Margin="81.168,365,130,0" VerticalAlignment="Top" Click="addButton_Click" Grid.Column="1"/>

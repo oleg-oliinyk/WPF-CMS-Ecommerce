@@ -12,7 +12,7 @@ using System.Windows;
 
 namespace StaemDatabaseApp.Controllers
 {
-    public static class ProductController
+    public class ProductController
     {
         private static MySqlCommand cmd = null;
         private static DataTable dt;
@@ -40,7 +40,9 @@ namespace StaemDatabaseApp.Controllers
                     string amount = dr["amount"].ToString();
                     string color_id = dr["color_id"].ToString();
                     string active = dr["active"].ToString();
-                    allProducts.Add(new Product(id, category_id, title, description, photo, cena_netto, cena_brutto, amount, color_id, active));
+                    int _id = Int32.Parse(id);
+                    string size_id = SizeController.RetrieveProduct2sizeByID(_id);
+                    allProducts.Add(new Product(id, category_id, title, description, photo, cena_netto, cena_brutto, amount, color_id, active, size_id));
                 }
             }
             return allProducts;
@@ -68,20 +70,23 @@ namespace StaemDatabaseApp.Controllers
                     string amount = dr["amount"].ToString();
                     string color_id = dr["color_id"].ToString();
                     string active = dr["active"].ToString();
-                    product = new Product(id, category_id, title, description, photo, cena_netto, cena_brutto, amount, color_id, active);
+                    int _id = Int32.Parse(id);
+                    string size_id = SizeController.RetrieveSizeByID(_id).ToString();
+                    product = new Product(id, category_id, title, description, photo, cena_netto, cena_brutto, amount, color_id, active, size_id);
                 }
             }
             return product;
         }
 
         public static bool AddProduct(
+            int category_id,
+            int color_id,
+            int size_id,
             string title,
             string description,
             double cena_netto,
             double cena_brutto,
             string amount,
-            string category,
-            string color, 
             string active
             )
         {
@@ -90,19 +95,52 @@ namespace StaemDatabaseApp.Controllers
                 " VALUES (@Product_category, @Product_title, @Product_description, @Product_netto, @Product_brutto, @Product_amount, " +
                 "@Product_color, @Product_active);";
             Dictionary<string, string> parameters = new Dictionary<string, string>();
-            parameters.Add("@Product_category", category);
+            parameters.Add("@Product_category", category_id.ToString());
+            parameters.Add("@Product_color", color_id.ToString());
             parameters.Add("@Product_title", title);
             parameters.Add("@Product_description", description);
             parameters.Add("@Product_netto", cena_netto.ToString());
             parameters.Add("@Product_brutto", cena_brutto.ToString());
             parameters.Add("@Product_amount", amount);
-            parameters.Add("@Product_color", color);
             parameters.Add("@Product_active", active);
             cmd = DbConnection.RunQueryWithParamList(query, parameters);
+            int product_id = (int)cmd.LastInsertedId;
+            SizeController.InsertProduct2Size(product_id, size_id, Int32.Parse(amount));
 
             return cmd != null;
         }
 
+        public static bool EditProduct(
+            int category_id,
+            int color_id,
+            int size_id,
+            string title, 
+            string description, 
+            double cena_netto,
+            double cena_brutto, 
+            string amount,
+            int id
+            )
+        {
+            string query = "UPDATE wpf_shop.products SET " +
+                "category_id=@Product_category, color_id=@Product_color, title =@Product_title, description=@Product_description, " +
+                "cena_netto=@Product_netto, cena_brutto=@Product_brutto, " +
+                "amount=@Product_amount WHERE id=@Id;";
+
+            Dictionary<string, string> parameters = new Dictionary<string, string>();
+            parameters.Add("@Product_category", category_id.ToString());
+            parameters.Add("@Product_color", color_id.ToString());
+            parameters.Add("@Product_title", title);
+            parameters.Add("@Product_description", description);
+            parameters.Add("@Product_netto", cena_netto.ToString());
+            parameters.Add("@Product_brutto", cena_brutto.ToString());
+            parameters.Add("@Product_amount", amount);
+            parameters.Add("@Id", id.ToString());
+            cmd = DbConnection.RunQueryWithParamList(query, parameters);
+            SizeController.UpdateProduct2Size(id, size_id, Int32.Parse(amount));
+
+            return cmd != null;
+        }
         public static bool RemoveProduct(int id)
         {
             string query = "DELETE FROM wpf_shop.products WHERE ID = (@ID);";
@@ -110,35 +148,5 @@ namespace StaemDatabaseApp.Controllers
             return cmd != null;
         }
 
-        public static bool EditProduct(
-            string title, 
-            string description, 
-            double cena_netto,
-            double cena_brutto, 
-            string amount, 
-            string category,
-            string color,
-            int id
-            )
-        {
-            string query = "UPDATE wpf_shop.products SET " +
-                "title=@Product_title, description=@Product_description, " +
-                "cena_netto=@Product_netto, cena_brutto=@Product_brutto, " +
-                "amount=@Product_amount, category_id=@Product_category, " +
-                "color_id=@Product_color WHERE id=@Id;";
-
-            Dictionary<string, string> parameters = new Dictionary<string, string>();
-            parameters.Add("@Product_title", title);
-            parameters.Add("@Product_description", description);
-            parameters.Add("@Product_netto", cena_netto.ToString());
-            parameters.Add("@Product_brutto", cena_brutto.ToString());
-            parameters.Add("@Product_amount", amount);
-            parameters.Add("@Product_category", category);
-            parameters.Add("@Product_color", color);
-            parameters.Add("@Id", id.ToString());
-            cmd = DbConnection.RunQueryWithParamList(query, parameters);
-
-            return cmd != null;
-        }
     }
 }

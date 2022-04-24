@@ -14,6 +14,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Color = StaemDatabaseApp.Model.Color;
+using Size = StaemDatabaseApp.Model.Size;
 
 namespace StaemDatabaseApp.Views
 {
@@ -22,6 +24,15 @@ namespace StaemDatabaseApp.Views
         public AddProductWindow()
         {
             InitializeComponent();
+
+            categoryComboBox.ItemsSource = CategoryController.RetrieveAllCategories();
+            categoryComboBox.SelectedIndex = 0;
+
+            colorComboBox.ItemsSource = ColorController.RetrieveAllColors();
+            colorComboBox.SelectedIndex = 0;
+
+            sizeComboBox.ItemsSource = SizeController.RetrieveAllSizes();
+            sizeComboBox.SelectedIndex = 0;
         }
 
         private void addButton_Click(object sender, RoutedEventArgs e)
@@ -73,14 +84,24 @@ namespace StaemDatabaseApp.Views
                 return;
             }
 
+            Category category = (Category)categoryComboBox.SelectedItem;
+            string category_id = category.Id.ToString();
+
+            Color color = (Color)colorComboBox.SelectedItem;
+            string color_id = color.Id.ToString();
+
+            Size size = (Size)sizeComboBox.SelectedItem;
+            string size_id = size.Id.ToString();
+
             bool answer = ProductController.AddProduct(
+                category.Id,
+                color.Id,
+                size.Id,
                 titleTextBox.Text,
                 descriptionTextBox.Text,
                 cena_netto,
                 cena_brutto,
                 amountTextBox.Text,
-                categoryComboBox.Text,
-                colorComboBox.Text,
                 activeTextBox.Text
                 );
             if (answer)

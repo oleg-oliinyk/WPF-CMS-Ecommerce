@@ -40,10 +40,10 @@ namespace StaemDatabaseApp.Controllers
             return allCategories;
         }
 
-        public static Category RetrieveCategoryByID(int userID)
+        public static Category RetrieveCategoryByID(int catID)
         {
             string query = "SELECT * FROM wpf_shop.categories WHERE ID = (@ID) limit 1;";
-            cmd = DbConnection.RunQueryWithID(query, userID);
+            cmd = DbConnection.RunQueryWithID(query, catID);
             Category category = null;
             if (cmd != null)
             {

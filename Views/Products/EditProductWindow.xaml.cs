@@ -14,11 +14,14 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Color = StaemDatabaseApp.Model.Color;
+using Size = StaemDatabaseApp.Model.Size;
 
 namespace StaemDatabaseApp.Views
 {
     public partial class EditProductWindow : Window
     {
+
         private Product product;
         public EditProductWindow(Product product)
         {
@@ -33,25 +36,35 @@ namespace StaemDatabaseApp.Views
             amountTextBox.Text = product.Amount.ToString();
             activeTextBox.Text = product.Active.ToString();
 
-            //categoryComboBox.ItemsSource = DevelopersDA.RetrieveAllDevelopers();
-            //for (int i = 0; i < developerComboBox.Items.Count; i++)
-            //{
-            //    if (((Developer)developerComboBox.Items.GetItemAt(i)).Id == game.Developer.Id)
-            //    {
-            //        developerComboBox.SelectedIndex = i;
-            //        break;
-            //    }
-            //}
+            categoryComboBox.ItemsSource = CategoryController.RetrieveAllCategories();
+            for (int i = 0; i < categoryComboBox.Items.Count; i++)
+            {
+                if (((Category)categoryComboBox.Items.GetItemAt(i)).Id == product.Category.Id)
+                {
+                    categoryComboBox.SelectedIndex = i;
+                    break;
+                }
+            }
 
-            //colorComboBox.ItemsSource = DevelopersDA.RetrieveAllDevelopers();
-            //for (int i = 0; i < developerComboBox.Items.Count; i++)
-            //{
-            //    if (((Developer)developerComboBox.Items.GetItemAt(i)).Id == game.Developer.Id)
-            //    {
-            //        developerComboBox.SelectedIndex = i;
-            //        break;
-            //    }
-            //}
+            colorComboBox.ItemsSource = ColorController.RetrieveAllColors();
+            for (int i = 0; i < colorComboBox.Items.Count; i++)
+            {
+                if (((Color)colorComboBox.Items.GetItemAt(i)).Id == product.Color.Id)
+                {
+                    colorComboBox.SelectedIndex = i;
+                    break;
+                }
+            }
+
+            sizeComboBox.ItemsSource = SizeController.RetrieveAllSizes();
+            for (int i = 0; i < sizeComboBox.Items.Count; i++)
+            {
+                if (((Size)sizeComboBox.Items.GetItemAt(i)).Id == product.Size.Id)
+                {
+                    sizeComboBox.SelectedIndex = i;
+                    break;
+                }
+            }
 
         }
 
@@ -104,16 +117,19 @@ namespace StaemDatabaseApp.Views
                 return;
             }
 
-
+            Category category = (Category)categoryComboBox.SelectedItem;
+            Color color = (Color)colorComboBox.SelectedItem;
+            Size size = (Size)sizeComboBox.SelectedItem;
 
             bool answer = ProductController.EditProduct(
+                category.Id,
+                color.Id,
+                size.Id,
                 titleTextBox.Text, 
                 descriptionTextBox.Text,
                 cena_netto,
                 cena_brutto,
                 amountTextBox.Text,
-                categoryComboBox.Text,
-                colorComboBox.Text, 
                 product.Id);
             if (answer)
             {

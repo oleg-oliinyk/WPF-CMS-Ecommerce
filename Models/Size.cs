@@ -9,37 +9,37 @@ namespace StaemDatabaseApp.Model
 {
     public class Size
     {
-        public Size(string id, string size, string active)
+        public Size(string id, string name, string active)
         {
             int id_;
             Int32.TryParse(id, out id_);
             Id = id_;
 
-            Size_ = size;
+            Name = name;
 
             int active_;
             Int32.TryParse(active, out active_);
             Active = active_;
         }
 
-        public Size(int id, string size, int active)
+        public Size(int id, string name, int active)
         {
             Id = id;
-            Size_ = size;
+            Name = name;
             Active = active;
         }
 
         private int id;
         private int active;
-        private string size;
+        private string name;
 
         public int Id { get => id; set => id = value; }
-        public string Size_ { get; set; }
+        public string Name { get; set; }
         public int Active { get => active; set => active = value; }
 
         public override string ToString()
         {
-            return Size_ + "  : " + Id.ToString();
+            return Name + "  : " + Id.ToString();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace StaemDatabaseApp.Views
 
             this.size = size;
 
-            sizeTextBox.Text = size.Size_;
+            sizeTextBox.Text = size.Name;
             activeTextBox.Text = size.Active.ToString();
 
         }

@@ -17,32 +17,32 @@
             <ColumnDefinition Width="375*"/>
         </Grid.ColumnDefinitions>
         <TabControl x:Name="tabControl" Grid.ColumnSpan="3" SelectionChanged="tabControl_SelectionChanged">
-            <TabItem Header="Users" Margin="-2,-2,-2,0" HorizontalAlignment="Right" Width="72">
+            <TabItem Header="Users"  Margin="-2,-2,-2,0" HorizontalAlignment="Right" Width="72">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="145*" />
                         <ColumnDefinition Width="649*" />
                     </Grid.ColumnDefinitions>
                     <StackPanel Margin="10">
-                        <Button x:Name="showGamesButton1"
+                        <Button x:Name="showUsersButton"
                             Content="Show users"
                             Margin="5"
                             VerticalAlignment="Center"
                             Click="showUsersButton_Click" />
-                        <Button x:Name="addGameButton1"
+                        <Button x:Name="addUserButton"
                             Content="Add user"
                             Margin="5"
                             VerticalAlignment="Center" Click="addUserButton_Click" />
-                        <Button x:Name="removeGameButton1"
+                        <Button x:Name="removeUserButton"
                             Content="Remove user"
                             Margin="5"
                             VerticalAlignment="Center" Click="removeUserButton_Click" />
-                        <Button x:Name="modifyGameButton1"
+                        <Button x:Name="EditUserButton"
                             Content="Edit user"
                             Margin="5"
                             VerticalAlignment="Center" Click="EditUserButton_Click" />
                     </StackPanel>
-                    <DataGrid x:Name="usersDataGrid"
+                    <DataGrid x:Name="usersDataGrid" SelectionChanged="DataGrid_SelectionChanged"
                         Grid.Column="2"
                         Margin="5" />
                 </Grid>
@@ -73,7 +73,7 @@
                             Margin="5"
                             VerticalAlignment="Center" Click="EditProductButton_Click" />
                     </StackPanel>
-                    <DataGrid x:Name="productsDataGrid"
+                    <DataGrid x:Name="productsDataGrid" SelectionChanged="DataGrid_SelectionChanged"
                         Grid.Column="2"
                         Margin="5" />
                 </Grid>
@@ -103,7 +103,7 @@
                             Margin="5"
                             VerticalAlignment="Center" Click="EditCategoryButton_Click" />
                     </StackPanel>
-                    <DataGrid x:Name="categoriesDataGrid"
+                    <DataGrid x:Name="categoriesDataGrid" SelectionChanged="DataGrid_SelectionChanged"
                         Grid.Column="2"
                         Margin="5" />
                 </Grid>
@@ -133,7 +133,7 @@
                             Margin="5"
                             VerticalAlignment="Center" Click="EditColorButton_Click" />
                     </StackPanel>
-                    <DataGrid x:Name="colorsDataGrid"
+                    <DataGrid x:Name="colorsDataGrid" SelectionChanged="DataGrid_SelectionChanged"
                         Grid.Column="2"
                         Margin="5" />
                 </Grid>
@@ -163,7 +163,7 @@
                             Margin="5"
                             VerticalAlignment="Center" Click="EditSizeButton_Click" />
                     </StackPanel>
-                    <DataGrid x:Name="sizesDataGrid"
+                    <DataGrid x:Name="sizesDataGrid" SelectionChanged="DataGrid_SelectionChanged"
                         Grid.Column="2"
                         Margin="5" />
                 </Grid>

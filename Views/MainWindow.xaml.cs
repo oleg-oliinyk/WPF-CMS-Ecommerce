@@ -61,7 +61,8 @@ namespace StaemDatabaseApp
             Window addUserWindow = new AddUserWindow();
             addUserWindow.Owner = this;
             addUserWindow.ShowDialog();
-            usersDataGrid.Items.Refresh();
+            usersDataGrid.ItemsSource = null;
+            usersDataGrid.ItemsSource = UserController.RetrieveAllUsers();
         }
 
         private void addProductButton_Click(object sender, RoutedEventArgs e)
@@ -69,7 +70,8 @@ namespace StaemDatabaseApp
             Window AddProductWindow = new AddProductWindow();
             AddProductWindow.Owner = this;
             AddProductWindow.ShowDialog();
-            usersDataGrid.Items.Refresh();
+            productsDataGrid.ItemsSource = null;
+            productsDataGrid.ItemsSource = ProductController.RetrieveAllProducts();
         }
 
         private void addCategoryButton_Click(object sender, RoutedEventArgs e)
@@ -77,7 +79,8 @@ namespace StaemDatabaseApp
             Window AddCategoryWindow = new AddCategoryWindow();
             AddCategoryWindow.Owner = this;
             AddCategoryWindow.ShowDialog();
-            usersDataGrid.Items.Refresh();
+            categoriesDataGrid.ItemsSource = null;
+            categoriesDataGrid.ItemsSource = CategoryController.RetrieveAllCategories();
         }
 
         private void addColorButton_Click(object sender, RoutedEventArgs e)
@@ -85,7 +88,8 @@ namespace StaemDatabaseApp
             Window AddColorWindow = new AddColorWindow();
             AddColorWindow.Owner = this;
             AddColorWindow.ShowDialog();
-            usersDataGrid.Items.Refresh();
+            colorsDataGrid.ItemsSource = null;
+            colorsDataGrid.ItemsSource = ColorController.RetrieveAllColors();
         }
 
         private void addSizeButton_Click(object sender, RoutedEventArgs e)
@@ -93,7 +97,8 @@ namespace StaemDatabaseApp
             Window AddSizeWindow = new AddSizeWindow();
             AddSizeWindow.Owner = this;
             AddSizeWindow.ShowDialog();
-            sizesDataGrid.Items.Refresh();
+            sizesDataGrid.ItemsSource = null;
+            sizesDataGrid.ItemsSource = SizeController.RetrieveAllSizes();
         }
 
         private void removeUserButton_Click(object sender, RoutedEventArgs e)
@@ -124,7 +129,9 @@ namespace StaemDatabaseApp
                 if (deleted)
                 {
                     MessageBox.Show("User was removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                    //customersDataGrid.Items.Remove(customersDataGrid.SelectedItem);
+                    usersDataGrid.Items.Remove(usersDataGrid.SelectedItem);
+                    usersDataGrid.ItemsSource = null;
+                    usersDataGrid.ItemsSource = UserController.RetrieveAllUsers();
                 }
                 else
                 {
@@ -164,7 +171,8 @@ namespace StaemDatabaseApp
                 if (deleted)
                 {
                     MessageBox.Show("Product was removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                    //customersDataGrid.Items.Remove(customersDataGrid.SelectedItem);
+                    productsDataGrid.ItemsSource = null;
+                    productsDataGrid.ItemsSource = ProductController.RetrieveAllProducts();
                 }
                 else
                 {
@@ -201,7 +209,8 @@ namespace StaemDatabaseApp
                 if (deleted)
                 {
                     MessageBox.Show("Category was removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                    //customersDataGrid.Items.Remove(customersDataGrid.SelectedItem);
+                    categoriesDataGrid.ItemsSource = null;
+                    categoriesDataGrid.ItemsSource = CategoryController.RetrieveAllCategories();
                 }
                 else
                 {
@@ -237,8 +246,9 @@ namespace StaemDatabaseApp
                 bool deleted = ColorController.RemoveColor(color.Id);
                 if (deleted)
                 {
-                    MessageBox.Show("Category was removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                    //customersDataGrid.Items.Remove(customersDataGrid.SelectedItem);
+                    MessageBox.Show("Color was removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    colorsDataGrid.ItemsSource = null;
+                    colorsDataGrid.ItemsSource = ColorController.RetrieveAllColors();
                 }
                 else
                 {
@@ -251,18 +261,18 @@ namespace StaemDatabaseApp
         {
             // Get selected index from grid
 
-            Size size_ = (Size)colorsDataGrid.SelectedItem;
+            Size size_ = (Size)sizesDataGrid.SelectedItem;
 
             if (size_ == null)
             { // Typ wiadomosci i ikonka?
-                MessageBox.Show("Select color first.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Select size first.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
                 return;
             }
 
             StringBuilder sb = new StringBuilder();
             sb.Append("This action will delete following customer from database!\n");
             sb.Append("ID: " + size_.Id + "\n");
-            sb.Append("Title: " + size_.Size_ + "\n");
+            sb.Append("Title: " + size_.Name + "\n");
             sb.Append("Active: " + size_.Active + "\n");
             sb.Append("\nThis action may not be reversable. Do you want to continue?");
 
@@ -274,7 +284,8 @@ namespace StaemDatabaseApp
                 if (deleted)
                 {
                     MessageBox.Show("Size was removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                    //customersDataGrid.Items.Remove(customersDataGrid.SelectedItem);
+                    sizesDataGrid.ItemsSource = null;
+                    sizesDataGrid.ItemsSource = SizeController.RetrieveAllSizes();
                 }
                 else
                 {
@@ -298,7 +309,8 @@ namespace StaemDatabaseApp
             Window editUserWindow = new EditUserWindow(user);
             editUserWindow.Owner = this;
             editUserWindow.ShowDialog();
-            usersDataGrid.Items.Refresh();
+            usersDataGrid.ItemsSource = null;
+            usersDataGrid.ItemsSource = UserController.RetrieveAllUsers();
         }
 
         private void EditProductButton_Click(object sender, RoutedEventArgs e)
@@ -316,7 +328,8 @@ namespace StaemDatabaseApp
             Window editProductWindow = new EditProductWindow(product);
             editProductWindow.Owner = this;
             editProductWindow.ShowDialog();
-            productsDataGrid.Items.Refresh();
+            productsDataGrid.ItemsSource = null;
+            productsDataGrid.ItemsSource = ProductController.RetrieveAllProducts();
         }
 
         private void EditCategoryButton_Click(object sender, RoutedEventArgs e)
@@ -334,7 +347,8 @@ namespace StaemDatabaseApp
             Window editCategoryWindow = new EditCategoryWindow(category);
             editCategoryWindow.Owner = this;
             editCategoryWindow.ShowDialog();
-            categoriesDataGrid.Items.Refresh();
+            categoriesDataGrid.ItemsSource = null;
+            categoriesDataGrid.ItemsSource = CategoryController.RetrieveAllCategories();
         }
 
         private void EditColorButton_Click(object sender, RoutedEventArgs e)
@@ -352,7 +366,8 @@ namespace StaemDatabaseApp
             Window editColorWindow = new EditColorWindow(color);
             editColorWindow.Owner = this;
             editColorWindow.ShowDialog();
-            colorsDataGrid.Items.Refresh();
+            colorsDataGrid.ItemsSource = null;
+            colorsDataGrid.ItemsSource = ColorController.RetrieveAllColors();
         }
 
         private void EditSizeButton_Click(object sender, RoutedEventArgs e)
@@ -370,11 +385,13 @@ namespace StaemDatabaseApp
             Window editSizeWindow = new EditSizeWindow(size_);
             editSizeWindow.Owner = this;
             editSizeWindow.ShowDialog();
-            colorsDataGrid.Items.Refresh();
+            sizesDataGrid.ItemsSource = null;
+            sizesDataGrid.ItemsSource = SizeController.RetrieveAllSizes();
         }
 
         private void tabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            e.Handled = true;
             string tabItem = ((sender as TabControl).SelectedItem as TabItem).Header as string;
 
             switch (tabItem)
@@ -404,6 +421,11 @@ namespace StaemDatabaseApp
                     return;
             }
 
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

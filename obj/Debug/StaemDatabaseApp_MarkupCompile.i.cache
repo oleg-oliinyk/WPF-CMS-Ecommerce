@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Lenovo\Desktop\Szk1Project\obj\Debug\
+F:\WSIZ\WPF-CMS-Ecommerce\obj\Debug\
 StaemDatabaseApp
 none
 false
 DEBUG;TRACE
-C:\Users\Lenovo\Desktop\Szk1Project\App.xaml
+F:\WSIZ\WPF-CMS-Ecommerce\App.xaml
 12-502183647
 
 28-1137416609
-271119950590
+27-211009745
 Views\Sizes\AddSizeWindow.xaml;Views\Sizes\EditSizeWindow.xaml;Views\Colors\AddColorWindow.xaml;Views\Colors\EditColorWindow.xaml;Views\Categories\AddCategoryWindow.xaml;Views\Categories\EditCategoryWindow.xaml;Views\Products\AddProductWindow.xaml;Views\Products\EditProductWindow.xaml;Views\Users\EditUserWindow.xaml;Views\Users\AddUserWindow.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;
 
-False
+True
 
