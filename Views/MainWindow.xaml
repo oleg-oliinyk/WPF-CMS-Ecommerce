@@ -75,7 +75,7 @@
                     </StackPanel>
                     <DataGrid x:Name="productsDataGrid" SelectionChanged="DataGrid_SelectionChanged"
                         Grid.Column="2"
-                        Margin="5,5,5,48" />
+                        Margin="5" />
                 </Grid>
             </TabItem>
             <TabItem Header="Categories" Margin="-2,-2,-2,0">
