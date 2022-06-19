@@ -1,7 +1,7 @@
-﻿<Application x:Class="StaemDatabaseApp.App"
+﻿<Application x:Class="WPF_CMS_Ecommerce.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:StaemDatabaseApp"
+             xmlns:local="clr-namespace:WPF_CMS_Ecommerce"
              StartupUri="Views/LoginWindow.xaml"
              ShutdownMode="OnLastWindowClose">
     <Application.Resources>

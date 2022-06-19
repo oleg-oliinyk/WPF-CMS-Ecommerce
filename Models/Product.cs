@@ -1,11 +1,7 @@
-﻿using StaemDatabaseApp.Controllers;
+﻿using WPF_CMS_Ecommerce.Controllers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace StaemDatabaseApp.Model
+namespace WPF_CMS_Ecommerce.Model
 {
     public class Product
     {

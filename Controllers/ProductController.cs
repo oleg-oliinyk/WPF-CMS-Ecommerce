@@ -1,16 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
-using StaemDatabaseApp.DataBaseConnection;
-using StaemDatabaseApp.Model;
+using WPF_CMS_Ecommerce.DataBaseConnection;
+using WPF_CMS_Ecommerce.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
-namespace StaemDatabaseApp.Controllers
+namespace WPF_CMS_Ecommerce.Controllers
 {
     public class ProductController
     {

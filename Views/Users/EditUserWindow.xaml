@@ -1,9 +1,9 @@
-﻿<Window x:Class="StaemDatabaseApp.Views.EditUserWindow"
+﻿<Window x:Class="WPF_CMS_Ecommerce.Views.EditUserWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:StaemDatabaseApp.Views"
+        xmlns:local="clr-namespace:WPF_CMS_Ecommerce.Views"
         mc:Ignorable="d"
         Title="Edit user" Height="450" Width="400" WindowStartupLocation="CenterOwner">
     <Grid>

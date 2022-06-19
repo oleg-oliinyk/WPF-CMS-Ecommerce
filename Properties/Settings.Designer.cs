@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace StaemDatabaseApp.Properties
+namespace WPF_CMS_Ecommerce.Properties
 {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]

@@ -2,12 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
-namespace StaemDatabaseApp.DataBaseConnection
+namespace WPF_CMS_Ecommerce.DataBaseConnection
 {
     public static class DbConnection
     {

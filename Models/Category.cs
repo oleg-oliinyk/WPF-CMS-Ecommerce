@@ -1,11 +1,6 @@
-﻿using StaemDatabaseApp.Controllers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
-namespace StaemDatabaseApp.Model
+namespace WPF_CMS_Ecommerce.Model
 {
     public class Category
     {

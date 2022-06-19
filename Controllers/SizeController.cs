@@ -1,17 +1,10 @@
 ﻿using MySql.Data.MySqlClient;
-using StaemDatabaseApp.DataBaseConnection;
-using StaemDatabaseApp.Model;
-using System;
+using WPF_CMS_Ecommerce.DataBaseConnection;
 using System.Collections.Generic;
 using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using Size = StaemDatabaseApp.Model.Size;
+using Size = WPF_CMS_Ecommerce.Model.Size;
 
-namespace StaemDatabaseApp.Controllers
+namespace WPF_CMS_Ecommerce.Controllers
 {
     public class SizeController
     {

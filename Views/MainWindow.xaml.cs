@@ -1,25 +1,13 @@
-﻿using StaemDatabaseApp.Controllers;
-using StaemDatabaseApp.DataBaseConnection;
-using StaemDatabaseApp.Model;
-using StaemDatabaseApp.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using WPF_CMS_Ecommerce.Controllers;
+using WPF_CMS_Ecommerce.Model;
+using WPF_CMS_Ecommerce.Views;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Color = StaemDatabaseApp.Model.Color;
-using Size = StaemDatabaseApp.Model.Size;
+using Color = WPF_CMS_Ecommerce.Model.Color;
+using Size = WPF_CMS_Ecommerce.Model.Size;
 
-namespace StaemDatabaseApp
+namespace WPF_CMS_Ecommerce
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
