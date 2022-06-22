@@ -44,21 +44,6 @@ namespace WPF_CMS_Ecommerce.Model
             Size = SizeController.RetrieveSizeByID(sizeID);
         }
 
-        public Product(int id, int category_id, string title, string description, string photo, double cena_netto, double cena_brutto, int amount, int color_id, int active, int size_id)
-        {
-            Id = id;
-            Title = title;
-            Description = description;
-            Photo = photo;
-            CenaNetto = cena_netto;
-            CenaBrutto = cena_brutto;
-            Amount = amount;
-            Active = active;
-            Category = category;
-            Color = color;
-            Size = size;
-        }
-
         private int id;
         private string title;
         private string description;

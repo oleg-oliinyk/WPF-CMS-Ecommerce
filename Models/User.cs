@@ -21,15 +21,6 @@ namespace WPF_CMS_Ecommerce.Model
             Admin = admin_;
         }
 
-        public User(int id, string login, string password, int admin)
-        {
-            Id = id;
-            Login = login;
-            Password = password;
-            Name = name;
-            Admin = admin;
-        }
-
         private int id;
         private string login;
         private string password;

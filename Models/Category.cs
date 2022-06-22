@@ -18,14 +18,6 @@ namespace WPF_CMS_Ecommerce.Model
             Active = active_;
         }
 
-        public Category(int id, string photo, string title, string description, int active)
-        {
-            Id = id;
-            Title = title;
-            Description = description;
-            Active = active;
-        }
-
         private int id;
         private string title;
         private string description;

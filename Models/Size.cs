@@ -17,13 +17,6 @@ namespace WPF_CMS_Ecommerce.Model
             Active = active_;
         }
 
-        public Size(int id, string name, int active)
-        {
-            Id = id;
-            Name = name;
-            Active = active;
-        }
-
         private int id;
         private int active;
         private string name;

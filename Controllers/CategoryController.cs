@@ -20,7 +20,9 @@ namespace WPF_CMS_Ecommerce.Controllers
             if (cmd != null)
             {
                 dt = new DataTable();
+                // Wstawiamy komędę
                 sda = new MySqlDataAdapter(cmd);
+                // Dodaje lub odświeża wiersze w DataSet, aby dopasować te w źródle danych.
                 sda.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
